@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,19 +32,20 @@
                 <i class="fas fa-user-plus"></i>
                 <i class="fal fa-ellipsis-h"></i>
             </div>
+            <audio id="bella" style="display: none;" src="Audios/maitre-gims-bella-clip-officiel.mp3"></audio>
             <div class="right-controls">
-                <i class="fas fa-play"></i>
+                <i onclick="playList()" class="paly-Playlist fas fa-play play-p-ause"></i>
             </div>
         </div>
         <div class="playlist">
             <!-- start song -->
-            <div class="song">
+            <div onclick="playBella()" class="song">
                 <div class="img-title">
                     <img width="40" height="40"
                         src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Ma%C3%AEtre_Gims_Cannes_2016.jpg"
                         alt="" srcset="">
                     <div class="titre-song">
-                        <p class="song-top-titile">mi corazon</p>
+                        <p class="song-top-titile">Bella</p>
                         <p class="song-bottom-titile">maitre gims</p>
                     </div>
                 </div>
@@ -54,336 +56,13 @@
             </div>
             <!-- end song -->
             <!-- start song -->
-            <div class="song">
+            <div onclick="playTDonner()" class="song">
                 <div class="img-title">
                     <img width="40" height="40"
                         src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Ma%C3%AEtre_Gims_Cannes_2016.jpg"
                         alt="" srcset="">
                     <div class="titre-song">
-                        <p class="song-top-titile">mi corazon</p>
-                        <p class="song-bottom-titile">maitre gims</p>
-                    </div>
-                </div>
-                <div class="song-option">
-                    <i class="fas fa-heart liked"></i>
-                    <i class="fal fa-ellipsis-h"></i>
-                </div>
-            </div>
-            <!-- end song -->
-            <!-- start song -->
-            <div class="song">
-                <div class="img-title">
-                    <img width="40" height="40"
-                        src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Ma%C3%AEtre_Gims_Cannes_2016.jpg"
-                        alt="" srcset="">
-                    <div class="titre-song">
-                        <p class="song-top-titile">mi corazon</p>
-                        <p class="song-bottom-titile">maitre gims</p>
-                    </div>
-                </div>
-                <div class="song-option">
-                    <i class="fas fa-heart "></i>
-                    <i class="fal fa-ellipsis-h"></i>
-                </div>
-            </div>
-            <!-- end song -->
-            <!-- start song -->
-            <div class="song">
-                <div class="img-title">
-                    <img width="40" height="40"
-                        src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Ma%C3%AEtre_Gims_Cannes_2016.jpg"
-                        alt="" srcset="">
-                    <div class="titre-song">
-                        <p class="song-top-titile">mi corazon</p>
-                        <p class="song-bottom-titile">maitre gims</p>
-                    </div>
-                </div>
-                <div class="song-option">
-                    <i class="fas fa-heart "></i>
-                    <i class="fal fa-ellipsis-h"></i>
-                </div>
-            </div>
-            <!-- end song -->
-            <!-- start song -->
-            <div class="song">
-                <div class="img-title">
-                    <img width="40" height="40"
-                        src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Ma%C3%AEtre_Gims_Cannes_2016.jpg"
-                        alt="" srcset="">
-                    <div class="titre-song">
-                        <p class="song-top-titile">mi corazon</p>
-                        <p class="song-bottom-titile">maitre gims</p>
-                    </div>
-                </div>
-                <div class="song-option">
-                    <i class="fas fa-heart liked"></i>
-                    <i class="fal fa-ellipsis-h"></i>
-                </div>
-            </div>
-            <!-- end song -->
-            <!-- start song -->
-            <div class="song">
-                <div class="img-title">
-                    <img width="40" height="40"
-                        src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Ma%C3%AEtre_Gims_Cannes_2016.jpg"
-                        alt="" srcset="">
-                    <div class="titre-song">
-                        <p class="song-top-titile">mi corazon</p>
-                        <p class="song-bottom-titile">maitre gims</p>
-                    </div>
-                </div>
-                <div class="song-option">
-                    <i class="fas fa-heart liked"></i>
-                    <i class="fal fa-ellipsis-h"></i>
-                </div>
-            </div>
-            <!-- end song -->
-            <!-- start song -->
-            <div class="song">
-                <div class="img-title">
-                    <img width="40" height="40"
-                        src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Ma%C3%AEtre_Gims_Cannes_2016.jpg"
-                        alt="" srcset="">
-                    <div class="titre-song">
-                        <p class="song-top-titile">mi corazon</p>
-                        <p class="song-bottom-titile">maitre gims</p>
-                    </div>
-                </div>
-                <div class="song-option">
-                    <i class="fas fa-heart liked"></i>
-                    <i class="fal fa-ellipsis-h"></i>
-                </div>
-            </div>
-            <!-- end song -->
-            <!-- start song -->
-            <div class="song">
-                <div class="img-title">
-                    <img width="40" height="40"
-                        src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Ma%C3%AEtre_Gims_Cannes_2016.jpg"
-                        alt="" srcset="">
-                    <div class="titre-song">
-                        <p class="song-top-titile">mi corazon</p>
-                        <p class="song-bottom-titile">maitre gims</p>
-                    </div>
-                </div>
-                <div class="song-option">
-                    <i class="fas fa-heart liked"></i>
-                    <i class="fal fa-ellipsis-h"></i>
-                </div>
-            </div>
-            <!-- end song -->
-            <!-- start song -->
-            <div class="song">
-                <div class="img-title">
-                    <img width="40" height="40"
-                        src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Ma%C3%AEtre_Gims_Cannes_2016.jpg"
-                        alt="" srcset="">
-                    <div class="titre-song">
-                        <p class="song-top-titile">mi corazon</p>
-                        <p class="song-bottom-titile">maitre gims</p>
-                    </div>
-                </div>
-                <div class="song-option">
-                    <i class="fas fa-heart liked"></i>
-                    <i class="fal fa-ellipsis-h"></i>
-                </div>
-            </div>
-            <!-- end song -->
-            <!-- start song -->
-            <div class="song">
-                <div class="img-title">
-                    <img width="40" height="40"
-                        src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Ma%C3%AEtre_Gims_Cannes_2016.jpg"
-                        alt="" srcset="">
-                    <div class="titre-song">
-                        <p class="song-top-titile">mi corazon</p>
-                        <p class="song-bottom-titile">maitre gims</p>
-                    </div>
-                </div>
-                <div class="song-option">
-                    <i class="fas fa-heart liked"></i>
-                    <i class="fal fa-ellipsis-h"></i>
-                </div>
-            </div>
-            <!-- end song -->
-            <!-- start song -->
-            <div class="song">
-                <div class="img-title">
-                    <img width="40" height="40"
-                        src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Ma%C3%AEtre_Gims_Cannes_2016.jpg"
-                        alt="" srcset="">
-                    <div class="titre-song">
-                        <p class="song-top-titile">mi corazon</p>
-                        <p class="song-bottom-titile">maitre gims</p>
-                    </div>
-                </div>
-                <div class="song-option">
-                    <i class="fas fa-heart liked"></i>
-                    <i class="fal fa-ellipsis-h"></i>
-                </div>
-            </div>
-            <!-- end song -->
-            <!-- start song -->
-            <div class="song">
-                <div class="img-title">
-                    <img width="40" height="40"
-                        src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Ma%C3%AEtre_Gims_Cannes_2016.jpg"
-                        alt="" srcset="">
-                    <div class="titre-song">
-                        <p class="song-top-titile">mi corazon</p>
-                        <p class="song-bottom-titile">maitre gims</p>
-                    </div>
-                </div>
-                <div class="song-option">
-                    <i class="fas fa-heart liked"></i>
-                    <i class="fal fa-ellipsis-h"></i>
-                </div>
-            </div>
-            <!-- end song -->
-            <!-- start song -->
-            <div class="song">
-                <div class="img-title">
-                    <img width="40" height="40"
-                        src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Ma%C3%AEtre_Gims_Cannes_2016.jpg"
-                        alt="" srcset="">
-                    <div class="titre-song">
-                        <p class="song-top-titile">mi corazon</p>
-                        <p class="song-bottom-titile">maitre gims</p>
-                    </div>
-                </div>
-                <div class="song-option">
-                    <i class="fas fa-heart liked"></i>
-                    <i class="fal fa-ellipsis-h"></i>
-                </div>
-            </div>
-            <!-- end song -->
-            <!-- start song -->
-            <div class="song">
-                <div class="img-title">
-                    <img width="40" height="40"
-                        src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Ma%C3%AEtre_Gims_Cannes_2016.jpg"
-                        alt="" srcset="">
-                    <div class="titre-song">
-                        <p class="song-top-titile">mi corazon</p>
-                        <p class="song-bottom-titile">maitre gims</p>
-                    </div>
-                </div>
-                <div class="song-option">
-                    <i class="fas fa-heart liked"></i>
-                    <i class="fal fa-ellipsis-h"></i>
-                </div>
-            </div>
-            <!-- end song -->
-            <!-- start song -->
-            <div class="song">
-                <div class="img-title">
-                    <img width="40" height="40"
-                        src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Ma%C3%AEtre_Gims_Cannes_2016.jpg"
-                        alt="" srcset="">
-                    <div class="titre-song">
-                        <p class="song-top-titile">mi corazon</p>
-                        <p class="song-bottom-titile">maitre gims</p>
-                    </div>
-                </div>
-                <div class="song-option">
-                    <i class="fas fa-heart liked"></i>
-                    <i class="fal fa-ellipsis-h"></i>
-                </div>
-            </div>
-            <!-- end song -->
-            <!-- start song -->
-            <div class="song">
-                <div class="img-title">
-                    <img width="40" height="40"
-                        src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Ma%C3%AEtre_Gims_Cannes_2016.jpg"
-                        alt="" srcset="">
-                    <div class="titre-song">
-                        <p class="song-top-titile">mi corazon</p>
-                        <p class="song-bottom-titile">maitre gims</p>
-                    </div>
-                </div>
-                <div class="song-option">
-                    <i class="fas fa-heart liked"></i>
-                    <i class="fal fa-ellipsis-h"></i>
-                </div>
-            </div>
-            <!-- end song -->
-            <!-- start song -->
-            <div class="song">
-                <div class="img-title">
-                    <img width="40" height="40"
-                        src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Ma%C3%AEtre_Gims_Cannes_2016.jpg"
-                        alt="" srcset="">
-                    <div class="titre-song">
-                        <p class="song-top-titile">mi corazon</p>
-                        <p class="song-bottom-titile">maitre gims</p>
-                    </div>
-                </div>
-                <div class="song-option">
-                    <i class="fas fa-heart liked"></i>
-                    <i class="fal fa-ellipsis-h"></i>
-                </div>
-            </div>
-            <!-- end song -->
-            <!-- start song -->
-            <div class="song">
-                <div class="img-title">
-                    <img width="40" height="40"
-                        src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Ma%C3%AEtre_Gims_Cannes_2016.jpg"
-                        alt="" srcset="">
-                    <div class="titre-song">
-                        <p class="song-top-titile">mi corazon</p>
-                        <p class="song-bottom-titile">maitre gims</p>
-                    </div>
-                </div>
-                <div class="song-option">
-                    <i class="fas fa-heart liked"></i>
-                    <i class="fal fa-ellipsis-h"></i>
-                </div>
-            </div>
-            <!-- end song -->
-            <!-- start song -->
-            <div class="song">
-                <div class="img-title">
-                    <img width="40" height="40"
-                        src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Ma%C3%AEtre_Gims_Cannes_2016.jpg"
-                        alt="" srcset="">
-                    <div class="titre-song">
-                        <p class="song-top-titile">mi corazon</p>
-                        <p class="song-bottom-titile">maitre gims</p>
-                    </div>
-                </div>
-                <div class="song-option">
-                    <i class="fas fa-heart liked"></i>
-                    <i class="fal fa-ellipsis-h"></i>
-                </div>
-            </div>
-            <!-- end song -->
-            <!-- start song -->
-            <div class="song">
-                <div class="img-title">
-                    <img width="40" height="40"
-                        src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Ma%C3%AEtre_Gims_Cannes_2016.jpg"
-                        alt="" srcset="">
-                    <div class="titre-song">
-                        <p class="song-top-titile">mi corazon</p>
-                        <p class="song-bottom-titile">maitre gims</p>
-                    </div>
-                </div>
-                <div class="song-option">
-                    <i class="fas fa-heart liked"></i>
-                    <i class="fal fa-ellipsis-h"></i>
-                </div>
-            </div>
-            <!-- end song -->
-            <!-- start song -->
-            <div class="song">
-                <div class="img-title">
-                    <img width="40" height="40"
-                        src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Ma%C3%AEtre_Gims_Cannes_2016.jpg"
-                        alt="" srcset="">
-                    <div class="titre-song">
-                        <p class="song-top-titile">mi corazon</p>
+                        <p class="song-top-titile">Tout donner</p>
                         <p class="song-bottom-titile">maitre gims</p>
                     </div>
                 </div>
@@ -411,7 +90,7 @@
                 </div>
                 <div class="song-option">
                     <i class="fas fa-laptop"></i>
-                    <i class="fas fa-play"></i>
+                    <i class="fas fa-play play-p-ause"></i>
                 </div>
             </div>
             <div class="home">
@@ -433,210 +112,40 @@
 </body>
 
 </html>
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold;
+<script>
+    var playpuse = document.querySelectorAll('.play-p-ause')
+    function playList() {
+        var sounds = document.getElementsByTagName('audio')[0]
+        if (sounds.paused) {
+            sounds.play();
+            for (i = 0; i < playpuse.length; i++) playpuse[i].className = "paly-Playlist fas fa-pause";
+
+        }
+        else {
+            sounds.pause();
+            for (i = 0; i < playpuse.length; i++) playpuse[i].className = "paly-Playlist fas fa-play";
+        }
     }
+    function playBella() {
+        const bella = document.getElementById('bella');
+        bella.src = "Audios/maitre-gims-bella-clip-officiel.mp3"
+        bella.play();
+        for (i = 0; i < playpuse.length; i++) playpuse[i].className = "paly-Playlist fas fa-pause";
 
-    .duration {
-        width: 100%;
-        height: 2px;
-        /* background-color: rgb(93, 120, 129); */
-    }
-
-    .flex {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .flex span {
-        font-size: 12px;
-        color: #817f7f;
-    }
-
-    .home {
-        -webkit-box-shadow: inset 3px 7px 5px -4px rgba(0, 0, 0, 0.27);
-        box-shadow: inset 3px 7px 5px -4px rgba(0, 0, 0, 0.27);
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .home i {
-        font-size: 20px;
-        margin-top: 15px;
-        margin-left: 30px;
-        color: #817f7f;
-        margin-right: 30px;
-    }
-
-    .current-duration {
-        width: 50%;
-        height: 2px;
-        background-color: lightblue;
-    }
-
-
-    .app-controls {
-
-        width: 100%;
-        position: sticky;
-        bottom: 0;
-        height: 110px;
-        background-color: #282828;
-    }
-
-    .song-top-titile {
-        font-weight: initial;
-        color: #65d36e !important;
-    }
-
-    .song-option i {
-        margin-right: 8px;
-    }
-
-    .liked {
-        color: #65d36e;
-    }
-
-    .song {
-
-        margin-left: 10px;
-        margin-right: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .song-option {
-        color: rgb(138, 126, 126) !important;
-        font-size: 20px;
-    }
-
-    .song-bottom-titile {
-        color: rgb(138, 126, 126) !important;
-        font-weight: initial;
-        font-size: 12px;
-    }
-
-    .titre-song {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .img-title {
-        margin-top: 10px;
-        display: flex;
-        align-items: center;
-    }
-
-    .titre-song p {
-        color: white;
-        margin: 0px 0px 0px 10px;
-    }
-
-    .playlist {
-        width: 100%;
-        min-height: 400px;
-        background-color: black;
-    }
-
-    .playlist-img {
-        /* padding: 50px 20px 20px 20px; */
-        padding-top: 40px;
-        width: 100%;
-        height: 600px;
-        background: rgb(139, 117, 166);
-        background: -moz-linear-gradient(180deg, rgba(139, 117, 166, 1) 0%, rgba(0, 0, 0, 1) 59%, rgba(0, 0, 0, 1) 100%);
-        background: -webkit-linear-gradient(180deg, rgba(139, 117, 166, 1) 0%, rgba(0, 0, 0, 1) 59%, rgba(0, 0, 0, 1) 100%);
-        background: linear-gradient(180deg, rgba(139, 117, 166, 1) 0%, rgba(0, 0, 0, 1) 59%, rgba(0, 0, 0, 1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8b75a6", endColorstr="#000000", GradientType=1);
 
     }
+    function playTDonner() {
+        const x = document.getElementById('bella');
+        x.src = "Audios/maitre-gims-tout-donner-clip-officiel.mp3"
+        x.play();
+        for (i = 0; i < playpuse.length; i++) playpuse[i].className = "paly-Playlist fas fa-pause";
 
-    .img-content img {
-        object-fit: cover;
-        width: 200px;
-        -webkit-box-shadow: 1px 2px 24px 1px rgba(0, 0, 0, 0.59);
-        box-shadow: 1px 2px 24px 1px rgba(0, 0, 0, 0.59);
-        height: 200px;
-    }
 
-    .img-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
+    bella.addEventListener('timeupdate', function () {
+        var duration = document.getElementsByClassName('current-duration')[0]
+        var positions = bella.currentTime / bella.duration;
+        duration.style.width = positions * 100 + "%";
 
-    .playlist-info h3 {
-        margin-bottom: 10px;
-        padding: 0;
-    }
-
-    .name-art {
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: center;
-    }
-
-    .name-art p {
-        margin: 0;
-        padding: 0;
-    }
-
-    .likes {
-        color: rgb(97, 97, 97);
-    }
-
-    .name-art span {
-        padding: 2px;
-        text-align: center;
-        width: 20px;
-        height: 20px;
-        color: black;
-        background-color: #65d36e;
-        margin-right: 5px;
-        border-radius: 90%;
-    }
-
-    .left-control i {
-        margin-left: 20px;
-    }
-
-    .controls {
-        color: rgb(160, 160, 160);
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        font-size: 25px;
-        /* margin-left: 19px; */
-        position: sticky;
-        top: 0;
-        background-color: black;
-        width: 100%;
-    }
-
-    .right-controls {
-        display: flex;
-        width: 50px;
-        margin-right: 10px;
-        height: 50px;
-        font-size: 20px;
-        margin-bottom: 11px;
-        justify-content: center;
-        align-items: center;
-        color: black;
-        background-color: #65d36e;
-        border-radius: 90px;
-    }
-
-    .playlist-info {
-        color: rgb(212, 209, 209);
-        margin-top: 20px;
-        margin-left: 19px;
-    }
-</style>
+    });
+</script>
