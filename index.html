@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/7/71/Spotify.png"
+        type="image/x-icon">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,8 +41,8 @@
         </div>
         <div class="playlist">
             <!-- start song -->
-            <div onclick="playBella()" class="song">
-                <div class="img-title">
+            <div class="song">
+                <div onclick="playBella()" class="img-title">
                     <img width="40" height="40"
                         src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Ma%C3%AEtre_Gims_Cannes_2016.jpg"
                         alt="" srcset="">
@@ -50,14 +52,14 @@
                     </div>
                 </div>
                 <div class="song-option">
-                    <i class="fas fa-heart "></i>
+                    <i onclick="like(event)" id="likee" class="fas fa-heart"></i>
                     <i class="fal fa-ellipsis-h"></i>
                 </div>
             </div>
             <!-- end song -->
             <!-- start song -->
-            <div onclick="playTDonner()" class="song">
-                <div class="img-title">
+            <div class="song">
+                <div onclick="playTDonner()" class="img-title">
                     <img width="40" height="40"
                         src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Ma%C3%AEtre_Gims_Cannes_2016.jpg"
                         alt="" srcset="">
@@ -67,7 +69,7 @@
                     </div>
                 </div>
                 <div class="song-option">
-                    <i class="fas fa-heart liked"></i>
+                    <i onclick="like(event)" id="likee" class="fas fa-heart liked"></i>
                     <i class="fal fa-ellipsis-h"></i>
                 </div>
             </div>
@@ -84,7 +86,7 @@
                         src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Ma%C3%AEtre_Gims_Cannes_2016.jpg"
                         alt="" srcset="">
                     <div class="titre-song">
-                        <p class="song-top-titile">mi corazon</p>
+                        <p id="titre" class="song-top-titile">mi corazon</p>
                         <p class="song-bottom-titile">maitre gims</p>
                     </div>
                 </div>
@@ -130,7 +132,10 @@
         const bella = document.getElementById('bella');
         bella.src = "Audios/maitre-gims-bella-clip-officiel.mp3"
         bella.play();
+        document.getElementsByClassName('current-duration')[0].style.width = 0 + "%";
         for (i = 0; i < playpuse.length; i++) playpuse[i].className = "paly-Playlist fas fa-pause";
+        document.getElementById('titre').innerHTML = "Bella";
+
 
 
     }
@@ -138,9 +143,9 @@
         const x = document.getElementById('bella');
         x.src = "Audios/maitre-gims-tout-donner-clip-officiel.mp3"
         x.play();
+        document.getElementsByClassName('current-duration')[0].style.width = 0 + "%";
         for (i = 0; i < playpuse.length; i++) playpuse[i].className = "paly-Playlist fas fa-pause";
-
-
+        document.getElementById('titre').innerHTML = "Tout donner";
     }
     bella.addEventListener('timeupdate', function () {
         var duration = document.getElementsByClassName('current-duration')[0]
@@ -148,4 +153,18 @@
         duration.style.width = positions * 100 + "%";
 
     });
+
+
+    // like 
+    function like(e) {
+        var post = (e.target)
+        if (post.className == "fas fa-heart") {
+            post.className = "fas fa-heart liked"
+        }
+        else {
+            post.className = "fas fa-heart"
+
+        }
+
+    }
 </script>
